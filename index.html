@@ -1,13 +1,522 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Life Guardian Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life Guardian Development Blog</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#2e7d32;
+}
+
+.image-placeholder{
+    border:2px dashed gray;
+    padding:50px;
+    text-align:center;
+    color:gray;
+    margin-top:15px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
+
+<header>
 
 <h1>Life Guardian Development Blog</h1>
 
-<p>Welcome to our software project blog.</p>
+<h3>A 3D Endless Runner for Diabetes Prevention and Management</h3>
+
+<p>
+Developed using Unity and C#
+</p>
+
+</header>
+
+<nav>
+<a href="#overview">Overview</a>
+<a href="#journey">Development Journey</a>
+<a href="#challenges">Challenges</a>
+<a href="#testing">Testing</a>
+<a href="#future">Future Work</a>
+</nav>
+
+
+<section id="overview">
+
+<h2>Project Overview</h2>
+
+<p>
+Life Guardian is a 3D educational endless runner designed to teach players about diabetes prevention and management through healthy food choices and lifestyle activities.
+</p>
+
+<p>
+Players protect the sacred Baobab Tree by making healthy decisions. The tree's life reflects the player's overall progress.
+</p>
+
+<h3>Main Features</h3>
+
+<ul>
+<li>Prevention and Management paths</li>
+<li>Healthy and unhealthy food systems</li>
+<li>Healthy and unhealthy activities</li>
+<li>Healing Dew rewards</li>
+<li>Achievements system</li>
+<li>Avatar selection</li>
+<li>Tree life system</li>
+<li>Tutorial system</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Phase 1: Initial Concept</h2>
+
+<p>
+The project began as an educational game aimed at promoting diabetes awareness through gameplay.
+</p>
+
+<p>
+Two learning paths were introduced:
+</p>
+
+<ul>
+<li>Prevention Path</li>
+<li>Management Path</li>
+</ul>
+
+<div class="image-placeholder">
+
+INSERT EARLY CONCEPT SCREENSHOT HERE
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 2: Environment Development</h2>
+
+<p>
+The world was built around the sacred Baobab Tree and portal system.
+</p>
+
+<p>
+Players enter either the Prevention or Management environments.
+</p>
+
+<div class="image-placeholder">
+
+INSERT EARLY ENVIRONMENT SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 3: Player Movement System</h2>
+
+<p>
+Implemented:
+</p>
+
+<ul>
+<li>Lane switching</li>
+<li>Jumping</li>
+<li>Double jump mechanics</li>
+<li>Mobile swipe controls</li>
+</ul>
+
+<div class="image-placeholder">
+
+INSERT PLAYER MOVEMENT SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 4: Food Collection System</h2>
+
+<p>
+Healthy foods reward players while unhealthy foods introduce negative effects.
+</p>
+
+<p>
+Healthy foods contribute to the health of the Baobab Tree and reward Healing Dew.
+</p>
+
+<div class="image-placeholder">
+
+INSERT FOOD SYSTEM SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 5: Activity Collection System</h2>
+
+<p>
+Healthy and unhealthy activities were added to encourage healthy lifestyle choices.
+</p>
+
+<div class="image-placeholder">
+
+INSERT ACTIVITY SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 6: Tree Life System</h2>
+
+<p>
+The Baobab Tree represents the player's health progress.
+</p>
+
+<p>
+Healthy decisions increase Tree Life while unhealthy choices reduce it.
+</p>
+
+<div class="image-placeholder">
+
+INSERT TREE LIFE SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 7: Healing Dew System</h2>
+
+<p>
+Healing Dew acts as the game's reward currency and helps unlock new levels.
+</p>
+
+<div class="image-placeholder">
+
+INSERT HEALING DEW SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 8: Avatar System</h2>
+
+<p>
+Players can choose different avatars.
+</p>
+
+<p>
+Several issues were encountered during development including scaling problems and falling avatars.
+</p>
+
+<div class="image-placeholder">
+
+INSERT AVATAR SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 9: Body Weight Mechanics Redesign</h2>
+
+<p>
+Originally, healthy foods continuously shrank the player.
+</p>
+
+<p>
+This behaviour was redesigned.
+</p>
+
+<h3>Food Level</h3>
+
+<ul>
+<li>Healthy food restores normal body size.</li>
+<li>Unhealthy food increases body size.</li>
+<li>Speed remains constant.</li>
+</ul>
+
+<h3>Activity Level</h3>
+
+<ul>
+<li>Healthy activities increase speed.</li>
+<li>Unhealthy activities decrease speed.</li>
+<li>Body size remains unchanged.</li>
+</ul>
+
+<div class="image-placeholder">
+
+INSERT BODY SIZE SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 10: Achievement System</h2>
+
+<p>
+Achievements were introduced to reward players for healthy decisions and milestones.
+</p>
+
+<div class="image-placeholder">
+
+INSERT ACHIEVEMENT PANEL SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Phase 11: Tutorial System</h2>
+
+<p>
+The tutorial evolved from simple text pages into a guided image-based tutorial.
+</p>
+
+<div class="image-placeholder">
+
+INSERT TUTORIAL SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section id="challenges">
+
+<h2>Challenges and Bugs Encountered</h2>
+
+<ul>
+
+<li>Avatar waterfall bug</li>
+
+<li>Incorrect avatar scaling</li>
+
+<li>Main menu loading issues</li>
+
+<li>Tutorial image synchronization problems</li>
+
+<li>Level unlocking bugs</li>
+
+<li>Achievement tracking issues</li>
+
+<li>UI alignment problems</li>
+
+<li>Character controller adjustments</li>
+
+</ul>
+
+<div class="image-placeholder">
+
+INSERT BUG SCREENSHOTS HERE
+
+</div>
+
+</section>
+
+
+<section id="testing">
+
+<h2>Testing</h2>
+
+<p>
+Testing was performed continuously throughout development.
+</p>
+
+<h3>Functional Testing</h3>
+
+<ul>
+
+<li>Player movement</li>
+
+<li>Food collection</li>
+
+<li>Activity collection</li>
+
+<li>Achievements</li>
+
+<li>Tutorial navigation</li>
+
+<li>Level unlocking</li>
+
+</ul>
+
+<h3>User Interface Testing</h3>
+
+<ul>
+
+<li>Buttons</li>
+
+<li>Menus</li>
+
+<li>Panels</li>
+
+<li>Life bar</li>
+
+</ul>
+
+<div class="image-placeholder">
+
+INSERT TESTING SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Final Product</h2>
+
+<p>
+Life Guardian currently includes:
+</p>
+
+<ul>
+
+<li>Main Menu</li>
+
+<li>Prevention Environment</li>
+
+<li>Management Environment</li>
+
+<li>Healing Dew System</li>
+
+<li>Achievements</li>
+
+<li>Avatar Selection</li>
+
+<li>Tree Life System</li>
+
+<li>Tutorial System</li>
+
+</ul>
+
+<div class="image-placeholder">
+
+INSERT FINAL GAME SCREENSHOTS
+
+</div>
+
+</section>
+
+
+<section id="future">
+
+<h2>Future Improvements</h2>
+
+<ul>
+
+<li>More levels</li>
+
+<li>Additional achievements</li>
+
+<li>Improved sound effects</li>
+
+<li>More educational content</li>
+
+<li>Leaderboards</li>
+
+<li>Player statistics</li>
+
+<li>Additional avatars</li>
+
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Educational Disclaimer</h2>
+
+<p>
+Life Guardian is intended to promote awareness and healthy habits. It is not a substitute for professional medical advice. Users should always consult healthcare professionals regarding medical concerns.
+</p>
+
+</section>
+
+
+<footer>
+
+<p>
+Life Guardian Development Blog © 2026</p>
+
+<p>
+Unity • C# • GitHub Pages
+</p>
+
+</footer>
 
 </body>
 </html>
